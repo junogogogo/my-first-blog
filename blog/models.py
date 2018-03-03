@@ -10,7 +10,7 @@ class Post(models.Model):
             default=timezone.now)
     published_date = models.DateTimeField(
             blank=True, null=True)
-    subtitle = models.CharField(max_length=300, default='')
+    subtitle = models.CharField(max_length=300, default='Testtesttest')
     def publish(self):
         self.published_date = timezone.now()
         self.save()
